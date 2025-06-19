@@ -1,0 +1,604 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+    height: 100%;
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;  
+    overflow-y: scroll;
+    width: 1920px;
+    height: 1960px;
+    background-color: white;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.head {
+    position: relative;
+    width: 100%; 
+    height: 180px;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 180px;
+    padding-left: 0;
+    top: 0;
+    left: 0;
+}
+
+.brand {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 230px;
+    margin-left: 0;
+}
+.brand h1 {
+    align-self: flex-start;
+    margin-top: 50px;
+    margin-right: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+.navbarlogo {
+    align-self: flex-start;
+    width: 155px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+.navButtons{
+    margin-bottom: 0;
+    margin-top: 50px;
+    gap: 10px;
+}
+.navButtons ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navButtons ul li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.navButtons ul li a {
+    display: inline-block;
+    position: relative; 
+    text-decoration: none; 
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: normal;
+    font-family: sans-serif;
+    transition: color 0.4s ease, transform 0.4s ease;
+    z-index: 1;
+}
+
+.contact-info {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.contact-info .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.contact-info div {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-info .location{
+    color: #F182E8;
+}
+
+.contact-info .phone {
+    color: #B8DB0C;
+}
+.appointment {
+    width: 100%; 
+    height: 144px;
+    background: #82F0EB;
+    overflow-x: hidden;
+    overflow-y: hidden; 
+    padding-top: 0;  
+    padding-bottom: 0;
+}
+.appointment_requests {
+    color: white;
+    font-family: sans-serif;
+    font-size: 32px;
+    margin-left: 30px;
+}
+.appointment_table {
+    padding: 20px;
+    min-height: 650px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+.reasonOfVisit {
+    width: 100%; 
+    height: 280px;
+    background: #ffffff;
+    overflow-x: hidden;
+    overflow-y: hidden; 
+    padding-top: 0;  
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.reason-box {
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+}
+
+
+.footer{
+    position: relative;
+    width: 1920px;
+    height: 500px;
+}
+
+.footer-container{
+    position: absolute;
+    top: 54px;
+    left: 194px;
+    display: flex;
+}
+
+.footer-icons{
+    margin-top: 67px;
+    margin-left: 31.48px;
+    display: block;
+    width: 22.526px;
+    height: 22.526px;
+    flex-shrink: 0;
+    aspect-ratio: 22.53/22.53;
+}
+
+.pink{
+    margin-bottom: 64.47px;
+}
+
+.green{
+    margin-bottom: 28.47px;
+}
+
+.footer-details{
+    width: 250.188px;
+    margin-top: 67px;
+    margin-left: 11.47px;
+    display: block;
+    text-align: justify;
+}
+
+.footer-address{
+    width: 250.188px;
+    color: #F182E8;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer-cp{
+    margin-top: 0;
+    color: #B8DB0C;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.footer-fb {
+    display: inline-block;   
+    width: 240px;      
+    word-wrap: break-word;   
+    white-space: normal;     
+    color: #82F0EB;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.footer-quicklinks{
+    margin-top: 15px;
+    margin-left: 67.81px;
+}
+
+.footer-quicklinks h1{
+    color: #F182E8;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+}
+.footer-quicklinks ul{
+    margin-top: 22px;
+}
+
+.footer-quicklinks ul li{
+    list-style-type: disc;
+    color: #B8DB0C;
+}
+
+.footer-quicklinks ul li a{
+    display: inline-block;
+    color: #B8DB0C;
+    text-align: justify;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer-services{
+    margin-top: 15px;
+    margin-left: 75px;
+
+}
+
+.footer-services h1{
+    color: #82F0EB;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.footer-services ul{
+    margin-top: 22px;
+}
+
+.footer-services ul li{
+    list-style-type: disc;
+    color: #F182E8;
+}
+
+.footer-services ul li a{
+    display: inline-block;
+    color: #F182E8;
+    text-align: justify;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    margin: 5px 0;
+    pointer-events: none;
+}
+
+.footer-services2{
+    margin-top: 85px;
+    margin-left: 40px;
+}
+
+.footer-services2 ul li{
+    list-style-type: disc;
+    color: #B8DB0C;
+}
+
+.footer-services2 ul li a{
+    display: inline-block;
+    color: #B8DB0C;
+    text-align: justify;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    margin: 5px 0;
+    pointer-events: none;
+}
+
+.foooter-line{
+    position: absolute;
+    top: 387px;
+    left: 110px;
+    width: 1700px;
+    height: 2px;
+    background: rgba(169, 169, 169, 0.50);
+}
+
+.copyright{
+    position: absolute;
+    top: 402px;
+    left: 127px;
+}
+
+.copyright-container{
+    display: flex;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+}
+
+.copyright-container p{
+    margin-top: 0;
+}
+
+.isbogens{
+    margin-top: 0;
+    margin-right: 811px;
+}
+
+.copyright-container img{
+    width: 32px;
+    height: 32px;
+}
+
+.fb{
+    margin-left: 20px;
+    margin-right: 81px;
+}
+
+        .appointment_table {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .appointment_table table {
+            width: 100%;
+            min-width: 1200px; /* or whatever fits your columns */
+            border-collapse: collapse;
+        }
+
+        .appointment_table th, .appointment_table td {
+            font-family: 'Poppins', sans-serif;
+            padding: 8px 12px;
+            text-align: left;
+            white-space: nowrap;
+        }
+        .appointment_table tr:nth-child(odd) {
+            background-color: #f2f2f2; /* Light gray */
+        }
+        .appointment_table tr:nth-child(even) {
+            background-color: #fff; /* White */
+        }
+        .appointment_table th {
+            background-color: #F182E8;
+            color: #fff;
+        }
+        @media (max-width: 1200px) {
+            .appointment_table table {
+                min-width: 900px;
+            }
+        }
+    
+        /* Add to your adminCSS/appointment.css */
+        .table-slider-wrapper {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .table-slider {
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            width: 100%;
+        }
+        #visitReason {
+            width: 100%;
+            height: 275px;
+            padding: 15px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            resize: none;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            opacity: 0.7;
+        }
+
+        .slider-btn {
+            background: #B8DB0C;
+            border: none;
+            color: #fff;
+            font-size: 2rem;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            z-index: 2;
+            border-radius: 8px;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+        .slider-btn:hover {
+            opacity: 1;
+        }
+        .slider-btn.left {
+            margin-right: 8px;
+        }
+        .slider-btn.right {
+            margin-left: 8px;
+        }
+        @media (max-width: 600px) {
+            .slider-btn {
+                font-size: 1.3rem;
+                width: 30px;
+                height: 40px;
+            }
+        }
+        .status-indicator {
+            display: inline-block;
+            padding: 5px 16px;  
+            border-radius: 20px;
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-align: center;
+            min-width: 60px;
+            margin: 2px 0;
+        }
+        .status-indicator.done {
+            background: #14BA6D; /* green */
+        }
+        .status-indicator.pending {
+            background: #ff9800; /* Dark orange */
+        }
+        .status-indicator.cancelled {
+            background: #e74c3c; /* red */
+        }
+        .view-reason-btn{
+            font-family: 'Poppins', sans-serif; 
+            width: 150px;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.35) inset;
+            background-color:#B8DB0C;
+            color: #ffffff;
+        }
+        .view-reason-btn:hover {
+            transform: scale(1.05);
+        }
+        .updatebtn {
+            font-family: 'Poppins', sans-serif; 
+            width: 75px;
+            height: 25px;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.35) inset;
+            background-color:#82F0EB;
+            color: #ffffff;
+        }
+        .updatebtn:hover {
+            transform: scale(1.05);
+        }
+        .deletebtn {
+            background-color: #e74c3c;
+            font-family: 'Poppins', sans-serif; 
+            width: 75px;
+            height: 25px;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.35) inset;
+            color: #ffffff;
+        }
+        .deletebtn:hover {
+            transform: scale(1.05);
+        }
+.popup-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.2s;
+}
+.popup-box {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+  animation: popupBounce 0.3s;
+}
+.popup-btn {
+  margin: 10px 15px 0 15px;
+  padding: 7px 18px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.popup-btn.confirm { background: #e74c3c; color: #fff; }
+.popup-btn.cancel { background: #aaa; color: #fff; }
+@keyframes popupBounce {
+  0% { transform: scale(0.7);}
+  60% { transform: scale(1.05);}
+  100% { transform: scale(1);}
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.navButtons ul li a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: normal;
+    font-family: sans-serif;
+    transition: color 0.4s ease, transform 0.4s ease;
+    z-index: 1;
+    white-space: nowrap;
+  }
+.navButtons ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+.navButtons ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}

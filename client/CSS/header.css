@@ -1,0 +1,117 @@
+.profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 300px; /* Adjusted margin for better alignment */
+    gap: 0px; /* Add spacing between the icon and the arrow */
+}
+
+.profilepic {
+    width: 81px;
+    height: 81px;
+    border-radius: 50%;
+    margin-left: 15px;
+    border: 2px solid #a6a6a6;
+}
+
+.profile.active {
+    background-color: rgba(169, 169, 169, 0.6); /* Light highlight */
+    border-radius: 50px; /* Rounded corners for the highlight */
+    width: 120px; /* Increase width for the highlight */
+}
+
+.profilepic.active {
+    border-color: #ffbe28; /* Highlight border color for the profile picture */
+}
+
+.arrow {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease; /* Smooth rotation */
+    margin-left: 20px; /* Space between icon and arrow */
+}
+
+.arrow.rotate {
+    transform: rotate(180deg); /* Rotate arrow when dropdown is open */
+}
+
+.arrow.active {
+    filter: brightness(1.5); /* Brighten the arrow when active */
+}
+
+.profile-dropdown {
+    position: absolute;
+    top: 180px; /* Adjust dropdown position */
+    left: 1575px; /* Align dropdown with the profile icon */
+    background: rgba(169, 169, 169, 0.6); /* Gray with 60% opacity */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 225px;
+    display: none;
+    z-index: 1000;
+    padding: 10px; /* Add padding inside the dropdown */
+}
+
+.profile-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add spacing between dropdown items */
+}
+
+.profile-dropdown ul li {
+    padding: 10px 15px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 5px; /* Add rounded corners to items */
+    transition: background 0.3s ease;
+}
+
+.profile-dropdown ul li:hover {
+    background: rgba(255, 255, 255, 0.2); /* Highlight on hover */
+}
+
+.profile-dropdown ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show class for dropdown toggle */
+.show {
+    display: block;
+}
+.signup, .login {
+    font-family: 'Poppins', sans-serif; 
+    width: 159.907px;
+    height: 44.774px;   
+    border-radius: 34px;
+    background-color: #B8DB0C; 
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFF; 
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    border: none; 
+    cursor: pointer;
+    margin-right: 20px;
+  
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .buttons {
+    display: flex; 
+    margin-left: 5px;
+}
+
+.book:hover {
+    background-color: #FFBE28;
+    transform: scale(1.05);
+}
+
+.signup:hover,.login:hover {
+    background-color: #a3c60b;
+    transform: scale(1.05);
+}

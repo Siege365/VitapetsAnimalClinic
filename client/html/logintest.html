@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logged In</title>
+</head>
+<body>
+    <h1>Logged in as</h1>
+    <h2 id="username"></h2>
+    <img id="profile-pic" alt="Profile Picture" style="width: 100px; border-radius: 50%;">
+    <p id="email"></p>
+
+    <script>
+        // Fetch user data from localStorage
+        const userName = localStorage.getItem("userName");
+        const userEmail = localStorage.getItem("userEmail");
+        const userPhoto = localStorage.getItem("userPhoto");
+
+        // Display user data
+        document.getElementById("username").textContent = userName;
+        document.getElementById("email").textContent = userEmail;
+        document.getElementById("profile-pic").src = userPhoto;
+    </script>
+</body>
+</html>

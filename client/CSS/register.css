@@ -1,0 +1,231 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../img/plain\ companybg.png') no-repeat center center/cover;
+    background-position: center 10%;
+    padding-top: 20px;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    gap: 10px;
+}
+
+.logo-container {
+    margin-top: -40px;
+    text-align: center;
+    margin-bottom: -30px;
+}
+
+.form-logo {
+    width: 286px;
+    height: auto;
+    border-radius: 50%;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    margin-top: 0px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.form-container h1 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.name-fields input {
+    flex: 1;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff69b4;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.form-container button:hover {
+    background-color: #ff85c1;
+}
+
+.form-container p {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.form-container p a {
+    color: #ff69b4;
+    text-decoration: none;
+}
+
+.form-container p a:hover {
+    text-decoration: underline;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+.otp-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.otp-inputs input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.verify-btn {
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.verify-btn:hover {
+    background-color: #ff85c1;
+}
+
+.resend-otp {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #ff69b4;
+    cursor: pointer;
+}
+
+.resend-otp:hover {
+    text-decoration: underline;
+}
+
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+/* Media Queries */
+@media (max-width: 482px) {
+    .main-container {
+        max-width: 90%;
+        gap: 5px;
+    }
+
+    .logo-container {
+        margin-top: -20px;
+        margin-bottom: 0;
+    }
+
+    .form-logo {
+        width: 200px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-container h1 {
+        font-size: 24px;
+    }
+
+    .form-container input {
+        font-size: 12px;
+    }
+
+    .form-container button {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .form-container p {
+        font-size: 12px;
+    }
+
+    .otp-inputs input {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background: url('../img/plain\ companybg.png') no-repeat center center / cover;
+  background-position: center 10%;
+  min-height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.logo-container {
+  margin-top: -70px;
+  text-align: center;
+  margin-bottom: -30px; /* Reduce spacing below the logo */
+}
+
+.form-logo {
+  width: 286px;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login-form {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 750;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.show-pass {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px 0;
+}
+
+.show-pass input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.forgot {
+  font-size: 12px;
+  text-align: right;
+  display: block;
+  margin: 5px 0 15px;
+  text-decoration: none;
+  color: #000;
+}
+
+.login-btn {
+  background: #FF70D9;
+  color: black;
+  font-weight: 600;
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.signup-text {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.signup-text a {
+  color: #FF70D9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-login {
+  margin-top: 15px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+/* Media Query for phone-sized screens */
+@media (max-width: 482px) {
+  .main-container {
+    margin-top: 10px; /* Reduce top margin for smaller screens */
+    max-width: 95%; /* Adjust width for smaller screens */
+  }
+
+  .form-logo {
+    width: 150px; /* Scale down the logo size further */
+  }
+
+  h2 {
+    font-size: 20px; /* Reduce the font size of the heading */
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    font-size: 10px; /* Adjust input font size for smaller screens */
+    padding: 8px; /* Reduce padding for inputs */
+  }
+
+  .login-btn {
+    font-size: 12px; /* Adjust button font size */
+    padding: 6px 0; /* Reduce button padding */
+  }
+
+  .signup-text {
+    font-size: 11px; /* Adjust font size for the signup text */
+  }
+
+  .social-icons img {
+    width: 20px; /* Scale down social icons */
+    margin: 0 3px; /* Adjust spacing between icons */
+  }
+  .send-otp-btn {
+    font-size: 10px;
+    padding: 5px 8px;
+}
+  
+}

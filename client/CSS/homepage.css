@@ -1,0 +1,125 @@
+@font-face {
+    font-family: Poppins;
+    src: url(poppins.regular.ttf);
+}
+
+html{
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .parent {
+    position: relative;
+    background-image: url(../img/Companybg1.png);
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    text-align: center;
+    
+  }
+ .container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttons{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 1462px;
+    gap: 29px;
+  }
+  .logo {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+  .logo img {
+    margin-bottom: 13px;
+  }
+
+  .signup button {
+    font-family: Poppins;
+    width: 200px;
+    height: 56px;
+    border-radius: 34px;
+    background-color: #F182E8; 
+    color: black; 
+    font-weight: bold;
+    font-size: 18px;
+    border: none; 
+    cursor: pointer;
+    margin-top: 77px;
+    
+}
+
+.login button {
+    font-family: Poppins;
+    width: 200px;
+    height: 56px;
+    border-radius: 34px;
+    background-color: #B8DB0B; 
+    color: black; 
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-top: 77px;
+}
+
+.logo h1 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.logo h3{
+    color: #fdfdfd;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 48px;
+}
+
+.logo button{
+    color: #2A2A2A;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 13px;
+    width: 356px;
+    height: 56px;
+    border-radius: 34px;
+    background-color: #FFBE28;
+}
+
+
+
+
+
+
+
+
+  

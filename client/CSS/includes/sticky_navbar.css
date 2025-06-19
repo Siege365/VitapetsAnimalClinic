@@ -1,0 +1,302 @@
+/* Sticky Navigation Bar - Initially hidden */
+.sticky-navbar {
+    position: fixed;
+    top: -200px; /* Start above the viewport */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: top 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    opacity: 0;
+}
+
+/* Visible state for sticky navbar */
+.sticky-navbar.visible {
+    top: 0;
+    opacity: 1;
+    animation: fadeInDown 0.5s ease;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Top info bar with contact details */
+.sticky-navbar .contact-info {
+    background-color: #7AEEE1;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.sticky-navbar .contact-info img {
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.sticky-navbar .contact-info .location,
+.sticky-navbar .contact-info .phone {
+    display: flex;
+    align-items: center;
+}
+
+/* Main navigation container */
+.sticky-navbar .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+}
+
+/* Logo styling - Keep on the left */
+.sticky-navbar .logo {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto; /* Don't allow logo to grow or shrink */
+}
+
+.sticky-navbar .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.sticky-navbar .brand-name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* Navigation menu - Position to the middle/right */
+.sticky-navbar .nav-menu {
+    display: flex;
+    justify-content: center;
+    flex: 1; /* Allow this to take up available space */
+    margin-right: 20px; /* Add space between menu and action buttons */
+}
+
+.sticky-navbar .nav-menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sticky-navbar .nav-menu li {
+    margin: 0 15px;
+}
+
+.sticky-navbar .nav-menu a {
+    color: #333;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+}
+
+.sticky-navbar .nav-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: black;
+    transition: width 0.3s;
+}
+
+.sticky-navbar .nav-menu a:hover::after {
+    width: 100%;
+}
+
+/* Action buttons - Keep on the far right */
+.sticky-navbar .action-buttons {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto; /* Don't allow action buttons to grow or shrink */
+    margin-left: auto; /* Push to the far right if needed */
+}
+
+.sticky-navbar .book-btn {
+    background-color: #FFBE28;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: transform 0.2s ease;
+}
+
+.sticky-navbar .login-btn {
+    background-color: #B8DB0C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Profile icon */
+.sticky-navbar .profile {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sticky-navbar .profile img.profilepic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sticky-navbar .profile img.arrow {
+    width: 12px;
+    height: 12px;
+    transition: transform 0.3s ease;
+}
+
+.sticky-navbar .profile img.arrow.rotate {
+    transform: rotate(180deg);
+}
+
+/* Sticky Profile dropdown */
+.sticky-navbar .profile-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    width: 200px;
+    display: none;
+    z-index: 1001;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.sticky-navbar .profile-dropdown.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sticky-navbar .profile-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sticky-navbar .profile-dropdown li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.sticky-navbar .profile-dropdown li:last-child {
+    border-bottom: none;
+}
+
+.sticky-navbar .profile-dropdown a {
+    color: #333;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    display: block;
+    transition: color 0.2s;
+}
+
+.sticky-navbar .profile-dropdown a:hover {
+    color: #FFBE28;
+}
+.book-btn,.login-btn {
+    box-shadow: 0px -5px 0px 0px rgba(0, 0, 0, 0.35) inset;
+}
+.book-btn:hover,.login-btn:hover {
+     transform: scale(1.05);
+}
+/* Responsive adjustments for sticky navbar */
+@media (max-width: 1200px) {
+    .sticky-navbar .brand-name {
+        font-size: 16px;
+    }
+    
+    .sticky-navbar .nav-menu li {
+        margin: 0 10px;
+    }
+    
+    .sticky-navbar .action-buttons button {
+        padding: 8px 15px;
+    }
+    
+    /* Adjust positioning for smaller screens */
+    .sticky-navbar .logo {
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .sticky-navbar .contact-info {
+        font-size: 12px;
+    }
+    
+    .sticky-navbar .logo img {
+        height: 40px;
+    }
+    
+    .sticky-navbar .brand-name {
+        font-size: 14px;
+    }
+    
+    .sticky-navbar .nav-menu a {
+        font-size: 14px;
+    }
+    
+    /* Adjust space between logo and nav menu */
+    .sticky-navbar .logo {
+        margin-right: 10px;
+    }
+}
+
+/* For mobile devices - adjust layout as needed */
+@media (max-width: 768px) {
+    .sticky-navbar .nav-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .sticky-navbar .logo,
+    .sticky-navbar .nav-menu {
+        margin: 0 auto 10px;
+        text-align: center;
+    }
+    
+    .sticky-navbar .action-buttons {
+        position: relative;
+        right: auto;
+        margin: 10px auto 0;
+    }
+    
+    .sticky-navbar .brand-name {
+        font-size: 12px;
+    }
+}

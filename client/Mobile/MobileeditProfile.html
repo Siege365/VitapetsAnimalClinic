@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Mobile/MobileCSS/MobileeditProfile.css">  
+    <title>Vitapets</title>
+</head>
+<body>
+    <section class="intro">
+        <div class="navbar">
+            <div class="navbar-container">
+                <div class="group1">
+                <img src="MobileIMG/logomainpage.png" alt="" class="logo">
+                <h1>VITAPETS</h1>
+                </div>
+                <div class="group2">
+                <img src="MobileIMG/more 1.png" alt="Menu" class="hamburger" onclick="toggleMenu()"></div>
+            </div>
+        </div>
+       <div class="overlay" id="overlay"></div>
+       <div class="mobile-nav" id="mobileNav">
+            <img src="MobileIMG/close 1.png" alt="Close" class="close-btn" onclick="toggleMenu()">
+            <ul>
+                <li><a href="Mobilemainpage.html" class="lahing">Home</a></li>
+                <li><a href="Mobileourservices.html" >Services</a></li>
+                <li><a href="Mobileaboutus.html" >About Us</a></li>
+                <li><a href="Mobilecontactus.html" >Contact Us</a></li>
+                <li><a href="#contact" >Sign Up</a></li>
+                <li><a href="#contact" >Login</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="header">
+        <div class="edit_profile">
+            <h1>Edit Profile</h1>
+        </div>
+    </section>
+    <section class="filloutcontainer">
+        <div class="contactDetails">
+            <div class="username">
+                <p>Username</p>
+                <input type="text" placeholder=" " class="name">
+            </div>
+            <div class="email">
+                <p>Email Address</p>
+                <input type="text" placeholder=" " class="name">
+            </div>
+            <div class="phone">
+                <p>Phone Number</p>
+                <input type="text" placeholder=" " class="name">
+            </div>
+            <div class="lastName">
+                <p>Last Name</p>
+                <input type="text" placeholder=" " class="name">
+            </div>
+            <div class="firstName">
+                <p>First Name</p>
+                <input type="text" placeholder=" " class="name">
+            </div>
+        </div>
+        <div class="saveinfo">
+            <div class="cancel">
+                <button class="cancelbtn">Cancel</button>
+            </div>
+            <div class="save">
+                <button class="savebtn">Save Info</button>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footerlogo"><img src="MobileIMG/logobgremove 4.png" alt=""></div>
+            <div class="footer-icons">
+                <img src="MobileIMG/location pink.png" alt="" class="pink2">
+                <img src="MobileIMG/telephone-call green 1.png" alt="" class="green">
+                <img src="MobileIMG/facebook skybleu.png" alt="" class="skybleu">
+            </div>
+            <div class="footer-details">
+                <p class="footer-address">1 Matina Aplaya Road, Talomo, Davao City, <br> 8000 Davao del Sur</p>
+                <p class="footer-cp">+63 932 184 1256</p>
+                <a href="http://" class="footer-fb">https://www.facebook.com/vitapetsanimalclinic</a>
+            </div>
+        </div>
+        <div class="footer-container2">
+            <div class="quicklinks">
+                <h1>Quick Links</h1>
+                <ul>
+                    <li><a href="Mobilemainpage.html">Home</a></li>
+                    <li><a href="Mobileourservices.html">Our Services</a></li>
+                    <li><a href="Mobileaboutus.html">About Us</a></li>
+                    <li><a href="Mobilecontactus.html">Contact Us</a></li>
+                    <li><a href="Mobilebookschedule.html">Book Schedule</a></li>
+                </ul>
+            </div>
+            <div class="services">
+                <h1>Our Services</h1>
+                <ul>
+                    <li><a href="#">Vaccinations</a></li>
+                    <li><a href="#">Desexing procedures</a></li>
+                    <li><a href="#">Grooming</a></li>
+                    <li><a href="#">Internal Medicine</a></li>
+                    <li><a href="#">Routine Surgery</a></li>
+                </ul>
+            </div>
+            <div class="services2">
+                <ul>
+                    <li><a href="#">Orthopedic Surgery</a></li>
+                    <li><a href="#">Cataract Services</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="copyright-container">
+                <a href="#top" class="scroll-to-top"> <img src="MobileIMG/right-arrow.png" alt="" class="arrow"></a>
+                <p class="title">Copyright © 2025. VitaPets Animal Clinic and Pet Supplies</p>
+                <div class="follow">
+                <p>Follow us on:</p> <img src="MobileIMG/facebook 3.png" alt="" class="fb">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+    function toggleMenu() {
+        const nav = document.getElementById('mobileNav');
+        const overlay = document.getElementById('overlay');
+
+    
+        const isMenuVisible = nav.style.display === 'block';
+        nav.style.display = isMenuVisible ? 'none' : 'block';
+        overlay.style.display = isMenuVisible ? 'none' : 'block';
+    }
+
+
+</script>
+</body>

@@ -1,0 +1,135 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+    height: 100%;
+    overflow-x: hidden; 
+    width: 1920px;
+    
+}
+
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo img {
+    flex-shrink: 0;
+    aspect-ratio: 255.61/132.00;
+}
+.logo h1, .logo h2 {
+    margin: 5px 0; 
+    padding: 0;
+    line-height: 0.65; 
+    font-size: 35px;
+}
+.logo h3 {
+    margin: 5px 0; 
+    padding: 0;
+    line-height: 0.65; 
+    font-size: 20px;
+}
+.logo h4 {
+    margin: 5px 0; 
+    padding: 0;
+    line-height: 2.5; 
+    font-size: 50px;
+}
+
+.background-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.faded {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 133, 242, 0.5);
+    z-index: -1;
+}
+
+.head {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+
+.appointment, .customers, .logout{
+    font-family: 'Poppins', sans-serif;
+    width: 356px;
+    height: 95px;
+    border-radius: 15px;
+    box-shadow: 0px -5px 0px 0px rgba(0, 0, 0, 0.35) inset;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 650;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+  
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+.appointment:active, .customers:active, .logout:active {
+    transform: translateY(4px);
+    box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.35) inset;
+  }
+  .admin {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.appointment {
+    background-color: #F182E8;
+}
+.customers {
+    background-color: #82F0EB;
+}
+.logout {
+    background-color: #B8DB0C;
+}
+
+
+/* Hover effects for buttons */
+.appointment:hover {
+    background-color: #e06ed1;
+    transform: scale(1.05);
+}
+
+.customers:hover {
+    background-color: #6ed9d3;
+    transform: scale(1.05);
+}
+
+.logout:hover {
+    background-color: #a3c60b;
+    transform: scale(1.05);
+}
